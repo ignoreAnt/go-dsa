@@ -2,8 +2,7 @@ package main
 
 import "fmt"
 
-/*
-*
+/**
 Variable Declaration:
 ---------------------
 
@@ -60,6 +59,19 @@ String:
 	stacks, and linked lists.
 	Additionally, Go’s strict typing enforces clarity and prevents certain kinds of bugs,
 	which is valuable in complex data structure implementations.
+
+
+*/
+
+/*
+*
+Demonstrates variable declaration and usage in Go.
+
+This example shows how to declare variables with explicit types,
+type inference, and short variable declaration syntax.
+It also covers the basic data types in Go, including booleans, integers,
+floating-point numbers, and strings.
+Finally, it touches on the different integer types available in Go.
 */
 func main() {
 	// Explicit variable declaration with type
