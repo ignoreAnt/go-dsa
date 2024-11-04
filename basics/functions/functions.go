@@ -287,16 +287,19 @@ func main() {
 }
 
 // 1. Basic Function Definition and Calling
+// add takes two integers as input and returns their sum
 func add(x int, y int) int {
 	return x + y
 }
 
 // 2.Parameters and Return Values
+// subtract takes two integers as input and returns their difference
 func subtract(a int, b int) int {
 	return a - b
 }
 
 // 3. Multiple Return Values
+// divide returns both the quotient and remainder when dividing a by b
 func divide(a int, b int) (int, int) {
 	quotient := a / b
 	remainder := a % b
@@ -304,6 +307,7 @@ func divide(a int, b int) (int, int) {
 }
 
 // 4. Named Return Values
+// rectangleProperties calculates and returns both the area and perimeter of a rectangle
 func rectangleProperties(length, width int) (area, perimeter int) {
 	area = length * width
 	perimeter = 2 * (length + width)
@@ -311,6 +315,7 @@ func rectangleProperties(length, width int) (area, perimeter int) {
 }
 
 // 5. Variadic Functions
+// sum takes any number of integers and calculates their total.
 func sum(nums ...int) int {
 	total := 0
 	for _, num := range nums {
@@ -320,15 +325,19 @@ func sum(nums ...int) int {
 }
 
 // 6. Passing Functions as Parameters
+// applyOperation takes two integers and a function (op) as parameters,
+// applying the function to the integers.
 func applyOperation(a, b int, op func(int, int) int) int {
 	return op(a, b)
 }
 
+// multiply takes two integers and returns their product.
 func multiply(a, b int) int {
 	return a * b
 }
 
 // 7. Anonymous Functions
+// anonymousFunctionExample demonstrates the use of an anonymous function.
 func anonymousFunctionExample() {
 	// Assigned to a variable
 	greet := func(name string) {
@@ -342,6 +351,7 @@ func anonymousFunctionExample() {
 }
 
 // 8. Closures
+// closureExample returns an anonymous function that increments counter each time it’s called.
 func closureExample() func() int {
 	counter := 0
 	return func() int {
@@ -351,6 +361,7 @@ func closureExample() func() int {
 }
 
 // 9. Recursion
+// factorial calculates the factorial of a number by calling itself with a decremented value of n.
 func factorial(n int) int {
 	if n == 0 {
 		return 1
