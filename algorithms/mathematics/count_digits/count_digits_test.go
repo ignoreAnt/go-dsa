@@ -1,6 +1,10 @@
 package count_digits
 
-import "testing"
+import (
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+	"testing"
+)
 
 func TestCountDigits(t *testing.T) {
 	testCases := []struct {
@@ -29,10 +33,13 @@ func TestCountDigits(t *testing.T) {
 
 	for _, tc := range testCases {
 		t.Run(tc.name, func(t *testing.T) {
-			got := CountDigits(tc.input)
-			if got != tc.expected {
-				t.Errorf("got %d, want %d", got, tc.expected)
-			}
+			actual := CountDigits(tc.input)
+
+			// Use require to immediately stop the test if a critical check fails.
+			require.NotNil(t, actual, "Result should not be nil")
+
+			// Use assert to check if actual and expected values are equal
+			assert.Equal(t, tc.expected, actual, "Expected: %d, Got: %d", tc.expected, actual)
 		})
 	}
 }
