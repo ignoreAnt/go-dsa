@@ -14,6 +14,11 @@ func primeFactorsBrute(n int) []int {
 	return factors
 }
 
+// primeFactors returns a slice of all prime factors of n.
+//
+// This function uses a hybrid method. It first divides out all the factors of 2,
+// then checks the odd factors from 3 up to sqrt(n). If n is a prime number
+// greater than 2, it is added to the slice of factors.
 func primeFactors(n int) []int {
 	var factors []int
 

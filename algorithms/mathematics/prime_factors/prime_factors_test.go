@@ -5,6 +5,13 @@ import (
 	"testing"
 )
 
+// TestPrimeFactors tests the primeFactors function for various cases.
+//
+// The test cases include a variety of edge cases, small composite numbers,
+// prime numbers, larger composite numbers with multiple prime factors, and
+// numbers with higher powers of prime factors. The test also verifies that
+// both the iterative (primeFactorsBrute) and recursive (primeFactors) methods
+// produce the same results.
 func TestPrimeFactors(t *testing.T) {
 	testCases := []struct {
 		name     string
