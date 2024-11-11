@@ -5,6 +5,12 @@ import (
 	"testing"
 )
 
+// TestGCD tests the GCD function for various cases.
+//
+// The test cases include a variety of edge cases, such as when one or both
+// numbers are 0, and more general cases with various GCD values.
+// The test also verifies that both the iterative and recursive methods produce
+// the same results.
 func TestGCD(t *testing.T) {
 	testCases := []struct {
 		name     string
