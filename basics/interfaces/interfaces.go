@@ -11,7 +11,7 @@ import (
  * @description: Interfaces in Go.
  * @file: interfaces.go
  * @summary: Interfaces in Go allow you to define contracts for types.
- * @link: https://go.dev/tour/interfaces
+ * @link: https://go.dev/tour/methods/9
 
 Concept/Topic: Interfaces in Go
 ------------------------------
