@@ -109,6 +109,16 @@ Notes:
 
 */
 
+// main demonstrates basic concurrency concepts using goroutines, channels, mutexes, and
+// select statements.
+//
+// It covers five main topics:
+//
+// 1. Goroutines: Using the go keyword to create goroutines.
+// 2. WaitGroup: Using sync.WaitGroup to wait for goroutines to complete.
+// 3. Buffered Channel: Creating a buffered channel with capacity 2.
+// 4. Select Statements: Using select to wait on multiple channel operations.
+// 5. Mutex and sync Package: Using mutexes to protect shared data in concurrent data structures.
 func main() {
 	// 1. Goroutines
 	go printMessage("Hello from goroutine!")
@@ -130,7 +140,7 @@ func main() {
 
 	wg.Wait()
 
-	// Using Buffered Channel
+	//3. Using UnBuffered Channel
 	msgChan := make(chan string)
 	defer close(msgChan)
 
@@ -145,7 +155,6 @@ func main() {
 
 	// 3. Buffered Channel
 	bufferedChan := make(chan int, 2)
-
 	bufferedChan <- 1
 	bufferedChan <- 2
 
