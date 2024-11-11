@@ -2,6 +2,10 @@ package palindrome_number
 
 import "strconv"
 
+// isPalindromeNumber checks if a given integer is a palindrome.
+// A palindrome is a number that reads the same forward and backward.
+// The function returns true if the integer is a palindrome, otherwise it returns false.
+// Note: Negative numbers cannot be palindromic by definition.
 func isPalindromeNumber(n int) bool {
 	// Negative numbers can't be palindrome
 	if n < 0 {
@@ -19,6 +23,11 @@ func isPalindromeNumber(n int) bool {
 
 }
 
+// isPalindromeStringMethod checks if a given integer is a palindrome by
+// converting the number into a string and comparing characters from both ends.
+// A palindrome is a number that reads the same forward and backward.
+// The function returns true if the integer is a palindrome, otherwise it returns false.
+// Note: Negative numbers cannot be palindromic by definition.
 func isPalindromeStringMethod(n int) bool {
 	// Negative numbers can't be palindrome
 	if n < 0 {

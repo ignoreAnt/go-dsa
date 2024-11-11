@@ -5,6 +5,12 @@ import (
 	"testing"
 )
 
+// TestFactorial tests the factorial function for various cases.
+//
+// The test cases include a variety of small and large positive numbers,
+// as well as edge cases for negative numbers and high values that would
+// overflow Go's native int type. The test also verifies that both the
+// iterative and recursive methods produce the same results.
 func TestFactorial(t *testing.T) {
 	testCases := []struct {
 		name     string

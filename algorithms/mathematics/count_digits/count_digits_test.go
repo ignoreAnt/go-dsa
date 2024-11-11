@@ -6,6 +6,15 @@ import (
 	"testing"
 )
 
+// TestCountDigits tests the CountDigits function for various cases.
+//
+// The test cases cover both positive and negative numbers, single and multiple
+// digits, edge cases with large numbers, and the smallest and largest two-digit
+// numbers.
+//
+// The test also covers the maximum and minimum values for 32-bit and 64-bit
+// signed integers, as well as single-digit negative numbers and multiple digit
+// negative numbers.
 func TestCountDigits(t *testing.T) {
 	testCases := []struct {
 		name     string
