@@ -5,6 +5,11 @@ import (
 	"testing"
 )
 
+// TestAllDivisors tests the divisorsOfNumber and allDivisorsOfNumber functions.
+//
+// The test cases cover a variety of inputs, including edge cases, small numbers,
+// prime numbers, perfect squares, and larger composite numbers. The test also
+// includes a performance test case for a large input.
 func TestAllDivisors(t *testing.T) {
 	testCases := []struct {
 		name     string
